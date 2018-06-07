@@ -11,28 +11,13 @@ public class Tank : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        float speed = 1;
+        float steer = 20;
+        float x = Input.GetAxis("Horizontal");
+        transform.Rotate(0, x * steer * Time.deltaTime, 0);
 
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            transform.eulerAngles = new Vector3(0, 0, 0);
-            transform.position += transform.forward * speed;
-        }
-        else if(Input.GetKey(KeyCode.DownArrow))
-        {
-            transform.eulerAngles = new Vector3(0, 180, 0);
-            transform.position += transform.forward * speed;
-        }
-        else if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            transform.eulerAngles = new Vector3(0, 270, 0);
-            transform.position += transform.forward * speed;
-        }
-        else if (Input.GetKey(KeyCode.RightArrow))
-        {
-            transform.eulerAngles = new Vector3(0, 90, 0);
-            transform.position += transform.forward * speed;
-        }
-
+        float speed = 3f;
+        float y = Input.GetAxis("Vertical");
+        Vector3 s = y * transform.forward * speed * Time.deltaTime;
+        transform.position += s;
     }
 }
