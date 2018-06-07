@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{8D29CF05-2DD9-4E3A-1B4F-DBBC9CBC6639}") = "TankWar", "Assembly-CSharp.csproj", "{3710F13A-37D4-D58C-EF1A-41D44817C154}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3710F13A-37D4-D58C-EF1A-41D44817C154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3710F13A-37D4-D58C-EF1A-41D44817C154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3710F13A-37D4-D58C-EF1A-41D44817C154}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3710F13A-37D4-D58C-EF1A-41D44817C154}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
